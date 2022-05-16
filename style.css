@@ -1,121 +1,35 @@
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+@import url(variable.css);
 
-@import url(variables.css);
-
-*,
+html,
 body,
-html {
+* {
   margin: 0;
   padding: 0;
-  font-size: 62.5%;
   box-sizing: border-box;
+  font-size: 62.5%;
 }
 
-.btn {
-  font-family: inherit;
-  font-size: 35px;
-  border-radius: 25px;
-  border: 3px solid #479cd6;
-  color: var(--indigo);
-  background-color: var(--white);
-  padding: 15px 32px;
+.blog-background {
+  background-color: var(--color2);
+}
+.blog-header {
+  display: flex;
+  justify-content:space-between;
+  background-color: var(--color1);
+}
+
+.blog-title {
+  font-size: var(--h2);
   text-align: center;
-  display: inline-block;
-  margin: 20px 7px;
-  cursor: pointer;
-  transition: all 0.15s;
-}
-
-.btn {
-
-}
-
-.slider {
-  display: flex;
-  justify-content: end;
-}
-
-#header {
-  font-size: 7rem;
-  margin: 0 auto;
-  width: auto;
-  color: rgb (236, 236, 236);
-}
-
-.navbar {
-  font-size: var(--h1);
-  overflow: hidden;
-  position: fixed;
-  width: 100%;
-
-.container {
-  display: flex;
   padding: 1rem;
-  background-color: var(--indigo);
+  font-family: "Inspiration", cursive;
+  color: var(--color2);
+  margin: 1rem;
+  margin-left:5rem;
 }
 
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
 
-nav li {
-  display: incline-block;
-  margin-left: 70px;
-}
-
-.logo {
-  float: left;
-  width: 10rem;
-}
-
-.navheader {
-  font-size: 4rem;
-}
-
-.news {
-  padding: 1rem;
-}
-
-.contact {
-  padding: 1rem;
-}
-
-.about {
-  padding: 1rem;
-}
-.img-con {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.img {
-  width: 50%;
-}
-
-#header {
-  font-size: 5rem;
-  margin: 0 auto;
-  width: auto;
-  text-align: left;
-  color: rgb(228, 19, 88);
-}
-
-.card {
-  /* Add shadows to create the "card" effect */
-  box-shadow: 0.4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  border-radius: 5px; /* 5px rounded corners */
-  border-style: dashed;
-  font-size: 15rem;
-)
-
-.desk-nav:hover::before
+.second-header {
+  text-align: center;
+  padding: 5rem;
+  font-family: "Oswald", sans-serif;
