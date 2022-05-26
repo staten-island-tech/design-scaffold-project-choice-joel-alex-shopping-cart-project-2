@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Content Manager</title>
+</head>
+<body>
+  <!-- Include the script that builds the page and powers Netlify CMS -->
+  <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+</body>
+</html>
+
+backend:
+  name: git-gateway
+  branch: master
+
+  backend:
+  name: git-gateway
+  branch: master
+media_folder: "uploads"
+
+collections:
+  - name: "notes"
+    label: "Notes"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    template, e.g., YYYY-MM-DD-title.md
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "City", name: "city", widget: "string"}
+      - {label: "Country", name: "country", widget: "string"}
+      - {label: "Tag", name: "tag", widget: "string" }
+      - {label: "Body", name: "body", widget: "markdown"}
+
+      </script>
+if (window.netlifyIdentity) {
+window
+  .netlifyIdentity
+  .on("init", user => {
+    if (!user) {
+      window
+        .netlifyIdentity
+        .on("login", () => {
+          document.location.href = "/admin/";
+        });
+    }
+  });
+}
+</script>
+</body>
+</html>
